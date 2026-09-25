@@ -1,29 +1,37 @@
-# IT 140 Module Four Assignment
-# Higher/Lower Game Pseudocode Template
-#
-# Complete the TODO prompts below with your own pseudocode.
-# Keep this file in .pseudo format for submission.
-#
-# Use clear indentation to show decisions and repeated behavior.
-# Your finished pseudocode should address every requirement in the
-# current Module Four Assignment Guidelines and Rubric.
+Import random  
 
-START hilow_game
+user = input() 
 
-    # Establish a valid guessing range.
-    TODO: Obtain the lower and upper bounds.
-    TODO: Repeat as needed until the bounds satisfy the requirement.
+low = int(input()) 
 
-    # Establish the number the player is trying to guess.
-    TODO: Generate the required random number from the valid range.
+high  = int(input()) 
 
-    # Play the game.
-    TODO: Obtain and validate a guess using the selected bounds.
-    TODO: Repeat the required game behavior until the correct guess.
-        TODO: Compare a valid guess and provide the required feedback.
-        TODO: Obtain and validate another guess when play continues.
+If low >= high: 
 
-END hilow_game
+	Print(“please try again”) 
 
-# === References ===
-# TODO: Add references for sources you used, or delete this line if unused.
+	Low = int(input()) 
+
+	High = int(input()) 
+
+Random_num = randint(low, high) 
+
+Print(user, “let’s play a random number game.”) 
+
+User_guess = int(input()) 
+
+If userguess > random_num: 
+
+	Print(“That is the wrong number. Try again”) 
+
+	User_guess = int(input()) 
+
+Elif userguess < random_num: 
+
+	print (“That is the wrong number. Try again”) 
+
+	User_guess = int(input()) 
+
+Elif userguess == random_num: 
+
+	Print(“Thats the correct number!”) 
